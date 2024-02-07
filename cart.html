@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/20e414ce45.js" crossorigin="anonymous"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img class="logo" src="images\logo mtaani.png" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li class="list-items"><a href="index.html">Home</a></li>
+                <li class="list-items"><a href="shop.html">Shop</a></li>
+                <li class="list-items"><a href="contact.html">Contact</a></li>
+                <li class="list-items"><a href="about.html">About</a></li>
+                <li class="list-items"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i> 
+        </div>
+    </section>
+    <section id="page-header" class="about-header">
+
+    </section>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>SubTotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="images\chrome-green.jpg" alt=""></td>
+                    <td>chrome Gin 750ML</td>
+                    <td>Ksh650</td>
+                    <td><input type="number" value="1"></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="images\chrome-green.jpg" alt=""></td>
+                    <td>chrome Gin 750ML</td>
+                    <td>Ksh650</td>
+                    <td><input type="number" value="1"></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="images\chrome-green.jpg" alt=""></td>
+                    <td>chrome Gin 750ML</td>
+                    <td>Ksh650</td>
+                    <td><input type="number" value="1"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+       <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images\logo mtaani.png" alt="logo">
+            <h3>Contact</h3>
+            <p><strong>Address:</strong><span><a href="https://goo.gl/maps/YS3ygkeafdXpmRMx7">Mtaani liqour stores</a></span></p>
+            <p><strong>phone:</strong><a href="tel:+254768515965">+254768515965</a></p>
+            <p><strong>Time:</strong>open-7:00am-till late</p>
+        </div>
+        
+        <div class="social-media">
+            <i class="fa-brands fa-facebook fa-beat-fade social"><a href=""></a></i>
+            <i class="fa-brands fa-twitter fa-bounce social"><a href=""></a></i>
+            <i class="fa-brands fa-instagram fa-spin fa-spin-reverse social"><a href=""></a></i>
+        </div>
+        <div>
+            <p>© 2023 Mtaani Liqour Stores.All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallimg = document.getElementsByClassName("small-img")
+
+        smallimg[0].onclick = function(){
+            mainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainImg.src = smallimg[1].src;
+        }
+    </script>
+    <script src="js\mtaani.js"></script>
+</body>
+</html>
